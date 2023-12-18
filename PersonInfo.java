@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Main {
+public class PersonInfo {
 
 	public static void main(String[] args) {
+		
 		Scanner scnr = new Scanner(System.in);
 		
 		String firstName;
@@ -11,9 +12,7 @@ public class Main {
 		String userCity;
 		String userZipcode;
 		
-		System.out.println("Please input information in the following order: First Name, Last Name, Street Address, City (In City,State format), and zip code.");
-		
-		
+		System.out.println("Please input information in the following order, each on their own line: First Name, Last Name, Street Address, City (In 'City, State' format), and zip code.");
 		
 		firstName = scnr.nextLine();
 		lastName = scnr.nextLine();
@@ -21,11 +20,11 @@ public class Main {
 		userCity = scnr.nextLine();
 		userZipcode = scnr.nextLine();
 		
-		System.out.println("Name: " + firstName);
-		System.out.println("   " + lastName);
+		System.out.println("First Name: " + firstName);
+		System.out.println("Last Name: " + lastName);
 		System.out.println("Address: " + userAddress);
-		System.out.println("   " + userCity);
-		System.out.println("   " + userZipcode);
+		System.out.println("         " + userCity);
+		System.out.println("         " + userZipcode);
 		
 		
 		scnr.close();
